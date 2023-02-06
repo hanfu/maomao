@@ -1,16 +1,6 @@
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const retryTimes = process.env.retryTimes;
-const groupKey = process.env.groupKey;
-const privateKey = process.env.privateKey;
-const resetKey = process.env.resetKey;
-const autoReply = process.env.autoReply;
-const friendShipRule = process.env.friendShipRule;
-const groupReplyMode = process.env.groupReplyMode;
-const privateReplyMode = process.env.privateReplyMode;
-
 export default {
   // 填入你的session token
-  OPENAI_API_KEY: OPENAI_API_KEY,
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY,
   // 设置获取消息的重试次数
   retryTimes: 5,
   // 在群组中设置唤醒微信机器人的关键词
